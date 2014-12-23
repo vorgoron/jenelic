@@ -24,8 +24,8 @@
     <TextView
         android:id="@+id/text_task"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        tools:text="Some task"
+        android:layout_height="100dp"
+        tools:text="Астэ удмурт ТВ-тӥ программаез нуись интые пукты но вакчияк туннэ нуналысьтыд иворъёсын тодматы"
         android:textColor="#fff"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"

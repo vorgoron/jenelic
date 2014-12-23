@@ -4,6 +4,15 @@
     android:layout_height="match_parent"
     android:background="@drawable/jak">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/bottle"
+        android:padding="10dp"
+        android:layout_marginTop="50dp" />
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
