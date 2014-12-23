@@ -33,6 +33,7 @@ public class MainActivity extends ActionBarActivity {
         tasksArray = getIntent().getStringArrayExtra(TASKS_ARRAY_KEY);
         taskText = (TextView) findViewById(R.id.text_task);
         jenelic = (ImageView) findViewById(R.id.jenelic);
+        jenelic.setRotation(30);
     }
 
     public void onClickJenelic(View view) {
@@ -66,7 +67,7 @@ public class MainActivity extends ActionBarActivity {
 
         currentDegree = (nextDegree) % 360;
 
-        rAnim.setDuration(nextDegree + 3000);
+        rAnim.setDuration(nextDegree + 10000);
         rAnim.setFillEnabled(true);
         rAnim.setFillAfter(true);
         rAnim.setInterpolator(new DecelerateInterpolator());
