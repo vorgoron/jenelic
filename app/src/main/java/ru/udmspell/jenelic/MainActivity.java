@@ -2,67 +2,71 @@ package ru.udmspell.jenelic;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.Random;
 
 
 public class MainActivity extends ActionBarActivity {
 
-    ImageView jenelic;
-    Animation animationRotate;
-    int curentDegree = 0;
+    private final String TASKS_ARRAY_KEY = "custom_tasks";
+
+    private final int START_RANDOM_INT = 1000;
+    private final int INTERVAL_RANDOM_INT = 4000;
+
+    private int currentDegree = 0;
+    private TextView taskText;
+    private ImageView jenelic;
+    private String[] tasksArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        tasksArray = getIntent().getStringArrayExtra(TASKS_ARRAY_KEY);
+        taskText = (TextView) findViewById(R.id.text_task);
         jenelic = (ImageView) findViewById(R.id.jenelic);
-
-        animationRotate = AnimationUtils.loadAnimation(this, R.anim.rotate_anim);
     }
 
+    public void onClickJenelic(View view) {
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+        Random random = new Random();
+        int nextDegree = START_RANDOM_INT + random.nextInt(INTERVAL_RANDOM_INT);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    public void startRotation(View view) {
-//        jenelic.startAnimation(animationRotate);
-
-        RotateAnimation rAnim = new RotateAnimation(curentDegree, curentDegree + 1000,
+        RotateAnimation rAnim = new RotateAnimation(currentDegree, nextDegree,
                 Animation.RELATIVE_TO_SELF,
                 0.5f,
                 Animation.RELATIVE_TO_SELF,
                 0.5f);
+        rAnim.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+                taskText.setText("");
+            }
 
-        curentDegree = (curentDegree + 1000) % 360;
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                Random randomTask = new Random();
+                int pos = randomTask.nextInt(tasksArray.length);
+                taskText.setText(tasksArray[pos]);
+            }
 
-        rAnim.setDuration(3000L);
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+
+        currentDegree = (nextDegree) % 360;
+
+        rAnim.setDuration(nextDegree + 3000);
         rAnim.setFillEnabled(true);
         rAnim.setFillAfter(true);
         rAnim.setInterpolator(new DecelerateInterpolator());

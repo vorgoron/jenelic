@@ -4,5 +4,17 @@
     <string name="app_name">Jenelic</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="default_start">default start</string>
+    <string name="custom_start">custom start</string>
+    <string name="add_button">add</string>
+    <string name="next_button"><![CDATA[next >]]></string>
+
+    <string-array name="tasks">
+        <item>1 dasf</item>
+        <item>2 dfasf</item>
+        <item>3 fda</item>
+        <item>4fds</item>
+        <item>5 dfa</item>
+    </string-array>
 
 </resources>
