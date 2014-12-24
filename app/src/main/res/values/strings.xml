@@ -3,17 +3,34 @@
 
     <string name="app_name">Jenelic</string>
     <string name="action_settings">Settings</string>
-    <string name="default_start">default start</string>
-    <string name="custom_start">custom start</string>
-    <string name="add_button">add</string>
-    <string name="next_button"><![CDATA[next >]]></string>
+    <string name="default_start">Дасям косонъёсын шудоно</string>
+    <string name="custom_start">Аслад косонъёсты гожъяса шудоно</string>
+    <string name="add_button">ватсано</string>
+    <string name="next_button">Шудоно</string>
 
     <string-array name="tasks">
-        <item>1 dasf</item>
-        <item>2 dfasf</item>
-        <item>3 fda</item>
-        <item>4fds</item>
-        <item>5 dfa</item>
+        <item>Чупа астэ</item>
+        <item>Бур палад пукись эштэ берпалаз ӵыж</item>
+        <item>5 удмурт кылбурчиослэсь нимъёссэс вера</item>
+        <item>Тыпыртон экты</item>
+        <item>Вера улонысьтыд кыӵе ке учырез, кудӥз понна тыныд али возьыт</item>
+        <item>Усьтэм укное кеськы: Мон - удмурт! Мон туж шудо!</item>
+        <item>Паллян палад пукись эшед сярысь малпанъёстэ вера</item>
+        <item>Кӧня тыныд арес, сомында пол ик астэ кымысад тэшкыльты</item>
+        <item>Вера, пичи дыръяд кин луэмед потэ вал</item>
+        <item>Та писпуослэсь удмурт нимъёссэс вера: берёза, тополь, сосна, ель, клён</item>
+        <item>Толэзьёслэсь удмурт нимъёссэс вера</item>
+        <item>Мурӝол Андеграунд кадь тэтчаса "Мы супер удмурты" кырӟанысьтыз припевзэ быдэсты</item>
+        <item>Удмурт кылбур вера. Ӧд ке быгаты, бур но паллян палад пукись эшъёсыд пельёстэ мед позыръялозы</item>
+        <item>Ым тырад сиён куртчы но шу: "Малы мон сыӵе кӧй?" </item>
+        <item>Николай Анисимовлэсь "Ӟеч луэ, тӧдьы кызьпуос" кырӟанзэ рокез сямен кырӟа</item>
+        <item>Вера, вордскем нуналад кыӵе тужгес но кулэтэм арбери тыныд кузьмазы</item>
+        <item>Удмурт кылын куинь анекдот мадь</item>
+        <item>Астэ удмурт ТВ-тӥ программаез нуись интые пукты но вакчияк туннэ нуналысьтыд иворъёсын тодматы</item>
+        <item>Удмурт нылкышно костюме пырись дӥсьёслэсь нимъёссэс вера</item>
+        <item>Паллян палан пукись эшед пала берытскы но шу: "Кыӵе тон мусо! Инь-инь-инь!"</item>
+        <item>10 удмурт сиён-юонъёслэсь нимъёссэс вера</item>
+        <item>Ӟуч кылэ берыкты: кун, куншет, кунпус, кунул</item>
     </string-array>
 
 </resources>
