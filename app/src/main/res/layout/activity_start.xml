@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/jak">
+    android:orientation="vertical"
+    android:background="@color/background_color">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:id="@+id/imageView"
         android:layout_gravity="center_horizontal|top"
-        android:src="@drawable/bottle"
-        android:padding="10dp"
-        android:layout_marginTop="50dp" />
+        android:src="@drawable/logo_screen"
+        android:padding="30dp"
+        android:layout_weight="1"
+        android:onClick="onLogoClick" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="150dp"
-        android:layout_gravity="center">
+        android:layout_gravity="center_horizontal|bottom">
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/default_start_button"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:text="@string/default_start"
-            android:id="@+id/default_start_button"
             android:layout_gravity="center_horizontal"
-            android:onClick="onClickDefaultStart" />
+            android:onClick="onClickDefaultStart"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/custom_start_button"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:text="@string/custom_start"
-            android:id="@+id/custom_start_button"
             android:layout_gravity="center_horizontal"
-            android:onClick="onClickCustomStart" />
+            android:onClick="onClickCustomStart"
+            android:layout_marginTop="10dp" />
     </LinearLayout>
-</FrameLayout>
+</LinearLayout>

@@ -8,8 +8,8 @@ android {
         applicationId "ru.udmspell.jenelic"
         minSdkVersion 10
         targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
+        versionCode 4
+        versionName "1.03"
     }
     buildTypes {
         release {
