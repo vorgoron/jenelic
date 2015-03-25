@@ -12,7 +12,7 @@ public class StartActivity extends ActionBarActivity{
     private final String TASKS_ARRAY_KEY = "custom_tasks";
     private final String TREE_KEY = "tree_key";
     private int clicks = 0;
-    private int maxClicks = 6;
+    private int maxClicks = 4;
     private boolean tree = false;
     LinearLayout linearLayout;
 
@@ -45,5 +45,11 @@ public class StartActivity extends ActionBarActivity{
             tree = true;
         }
 
+    }
+
+    public void onClickAbout(View view) {
+        Intent intent = new Intent(StartActivity.this, AboutActivity.class);
+        intent.putExtra(TREE_KEY, tree);
+        startActivity(intent);
     }
 }

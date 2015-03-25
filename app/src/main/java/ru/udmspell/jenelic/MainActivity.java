@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
@@ -69,7 +68,7 @@ public class MainActivity extends Activity {
         if (gameOver) {
             return;
         }
-        Animation animAlpha = AnimationUtils.loadAnimation(MainActivity.this, R.anim.alpha);
+//        Animation animAlpha = AnimationUtils.loadAnimation(MainActivity.this, R.anim.alpha);
         taskText.setText("");
 
         Random random = new Random();

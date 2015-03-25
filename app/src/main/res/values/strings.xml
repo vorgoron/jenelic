@@ -33,5 +33,17 @@
         <item>10 удмурт сиён-юонъёслэсь нимъёссэс вера</item>
         <item>Ӟуч кылэ берыкты: кун, куншет, кунпус, кунул</item>
     </string-array>
+    <string name="title_activity_about">Ми сярысь</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="about">Ми сярысь</string>
+    <string name="idea">Та шудонэз малпаз но юанъёс дасяз:</string>
+    <string name="idea_fio">Лукерья Шихова</string>
+    <string name="develop">Лэсьтӥсь:</string>
+    <string name="developer">Григорий Григорьев</string>
+    <string name="design">Суред лэсьтӥз:</string>
+    <string name="designer">Вера Штыкова</string>
+    <string name="send_report">Малпандэс кельтоно</string>
 
 </resources>
