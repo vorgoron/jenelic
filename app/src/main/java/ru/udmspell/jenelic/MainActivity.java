@@ -13,11 +13,12 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Random;
+
+import ru.udmspell.jenelic.view.SecretTextView;
 
 
 public class MainActivity extends Activity {
@@ -28,9 +29,12 @@ public class MainActivity extends Activity {
 
     private final int START_RANDOM_INT = 1000;
     private final int INTERVAL_RANDOM_INT = 4000;
+    private final int ROTATE_DURATION = 8000;
+    private final int SECRETTEXT_DURATION = 1500;
+
 
     private int currentDegree = 0;
-    private TextView taskText;
+    private SecretTextView taskText;
     private ImageView jenelic;
     private String[] tasksArray;
     private ArrayList<Integer> completeTasks = new ArrayList<>();
@@ -43,9 +47,12 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         tasksArray = getIntent().getStringArrayExtra(TASKS_ARRAY_KEY);
-        taskText = (TextView) findViewById(R.id.text_task);
+        taskText = (SecretTextView) findViewById(R.id.text_task);
         jenelic = (ImageView) findViewById(R.id.jenelic);
         sendButton = findViewById(R.id.sendOpinion);
+
+        taskText.setDuration(SECRETTEXT_DURATION);
+        taskText.show();
 
         boolean tree = getIntent().getBooleanExtra(TREE_KEY, false);
         if (tree) {
@@ -62,6 +69,8 @@ public class MainActivity extends Activity {
         if (gameOver) {
             return;
         }
+        Animation animAlpha = AnimationUtils.loadAnimation(MainActivity.this, R.anim.alpha);
+        taskText.setText("");
 
         Random random = new Random();
         int nextDegree = START_RANDOM_INT + random.nextInt(INTERVAL_RANDOM_INT);
@@ -94,8 +103,7 @@ public class MainActivity extends Activity {
                 }
                 completeTasks.add(pos);
                 taskText.setText(tasksArray[pos]);
-                Animation animAlpha = AnimationUtils.loadAnimation(MainActivity.this, R.anim.alpha);
-                taskText.startAnimation(animAlpha);
+                taskText.show();
             }
 
             @Override
@@ -106,7 +114,7 @@ public class MainActivity extends Activity {
 
         currentDegree = (nextDegree) % 360;
 
-        rAnim.setDuration(nextDegree + 10000);
+        rAnim.setDuration(nextDegree + ROTATE_DURATION);
         rAnim.setFillEnabled(true);
         rAnim.setFillAfter(true);
         rAnim.setInterpolator(new DecelerateInterpolator());
