@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,24 +20,66 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         android:layout_gravity="center_horizontal|bottom">
 
-        <Button
-            android:id="@+id/default_start_button"
-            android:layout_width="280dp"
+        <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/default_start"
             android:layout_gravity="center_horizontal"
-            android:onClick="onClickDefaultStart"/>
+            app:shadowTranslationZ="2dp"
+            app:shadowElevation="4dp">
 
-        <Button
-            android:id="@+id/custom_start_button"
-            android:layout_width="280dp"
+            <Button
+                android:id="@+id/default_start_button"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/default_start"
+                android:onClick="onClickDefaultStart" />
+        </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+
+        <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/custom_start"
             android:layout_gravity="center_horizontal"
-            android:onClick="onClickCustomStart"
-            android:layout_marginTop="10dp" />
+            app:shadowTranslationZ="2dp"
+            app:shadowElevation="4dp">
+
+            <Button
+                android:id="@+id/custom_start_button"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/custom_start"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClickCustomStart" />
+        </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+
+        <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:shadowTranslationZ="2dp"
+            app:shadowElevation="4dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/about"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClickAbout" />
+        </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
     </LinearLayout>
 </LinearLayout>
