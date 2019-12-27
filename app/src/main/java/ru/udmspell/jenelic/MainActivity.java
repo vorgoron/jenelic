@@ -46,8 +46,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         tasksArray = getIntent().getStringArrayExtra(TASKS_ARRAY_KEY);
-        taskText = (SecretTextView) findViewById(R.id.text_task);
-        jenelic = (ImageView) findViewById(R.id.jenelic);
+        taskText = findViewById(R.id.text_task);
+        jenelic = findViewById(R.id.jenelic);
         sendButton = findViewById(R.id.sendOpinion);
 
         taskText.setDuration(SECRETTEXT_DURATION);
@@ -56,7 +56,7 @@ public class MainActivity extends Activity {
         boolean tree = getIntent().getBooleanExtra(TREE_KEY, false);
         if (tree) {
             jenelic.setImageResource(R.drawable.tree_2);
-            LinearLayout linearLayout = (LinearLayout) findViewById(R.id.main_layout);
+            LinearLayout linearLayout = findViewById(R.id.main_layout);
             linearLayout.setBackgroundColor(getResources().getColor(R.color.ny_background_color));
         }
 

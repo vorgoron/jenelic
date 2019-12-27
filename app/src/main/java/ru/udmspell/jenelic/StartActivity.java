@@ -2,12 +2,12 @@ package ru.udmspell.jenelic;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-public class StartActivity extends ActionBarActivity{
+public class StartActivity extends AppCompatActivity {
 
     private final String TASKS_ARRAY_KEY = "custom_tasks";
     private final String TREE_KEY = "tree_key";
