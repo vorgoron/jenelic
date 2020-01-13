@@ -20,12 +20,16 @@ public class StartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
-        linearLayout = (LinearLayout) findViewById(R.id.main_layout);
+        linearLayout = findViewById(R.id.main_layout);
     }
 
     public void onClickDefaultStart(View view) {
         Intent intent = new Intent(StartActivity.this, MainActivity.class);
-        intent.putExtra(TASKS_ARRAY_KEY, getResources().getStringArray(R.array.tasks));
+        if (tree) {
+            intent.putExtra(TASKS_ARRAY_KEY, getResources().getStringArray(R.array.new_year_tasks));
+        } else {
+            intent.putExtra(TASKS_ARRAY_KEY, getResources().getStringArray(R.array.tasks));
+        }
         intent.putExtra(TREE_KEY, tree);
         startActivity(intent);
     }
