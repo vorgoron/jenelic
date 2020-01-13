@@ -1,10 +1,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/jak">
+    android:background="@color/background_color">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -13,23 +14,38 @@
 
         <ImageView
             android:id="@+id/jenelic"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:src="@drawable/ic_launcher"
+            android:src="@drawable/bottle"
             android:onClick="onClickJenelic"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp" />
+            android:padding="30dp" />
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/text_task"
-        android:layout_width="fill_parent"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ru.udmspell.jenelic.view.SecretTextView
+            android:id="@+id/text_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_text"
+            android:textColor="#000000"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Some task"
-        android:textColor="#fff"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:paddingBottom="5dp"
-        android:gravity="center" />
+        android:text="Малпандэс кельтоно"
+        android:id="@+id/sendOpinion"
+        android:layout_gravity="center_horizontal"
+        android:onClick="OnClickSend"
+        android:visibility="gone" />
+
 </LinearLayout>

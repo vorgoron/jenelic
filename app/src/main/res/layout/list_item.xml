@@ -10,5 +10,4 @@
     android:paddingEnd="10dp"
     android:paddingRight="10dp"
     android:minHeight="?android:attr/listPreferredItemHeightSmall"
-    android:text="some text"
-    android:textColor="#fff"/>
+    android:text="some text"/>

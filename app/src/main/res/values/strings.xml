@@ -1,20 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Jenelic</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="default_start">default start</string>
-    <string name="custom_start">custom start</string>
-    <string name="add_button">add</string>
-    <string name="next_button"><![CDATA[next >]]></string>
+    <string name="app_name">Ӟенелик</string>
+    <string name="default_start">Дасям косонъёсын шудоно</string>
+    <string name="custom_start">Асьтэ косонъёсын шудоно</string>
+    <string name="add_button">ватсано</string>
+    <string name="next_button">Шудоно</string>
+    <string name="game_over">Берпуметӥ косон: шудӥсьёсын ӵош астуспуктэм (селфи) лэсьты но инстаграмад яке контактад #ӟенелик хештэген кушты.\nШудэмды понна тау!</string>
+    <string name="start_text">Ӟенеликез бергатон понна зӥбе со вылэ</string>
 
     <string-array name="tasks">
-        <item>1 dasf</item>
-        <item>2 dfasf</item>
-        <item>3 fda</item>
-        <item>4fds</item>
-        <item>5 dfa</item>
+        <item>Чупа астэ</item>
+        <item>Бур палад пукись эштэ берпалаз ӵыж</item>
+        <item>5 удмурт кылбурчиослэсь нимъёссэс вера</item>
+        <item>Тыпыртон экты</item>
+        <item>Вера улонысьтыд кыӵе ке учырез, кудӥз понна тыныд али возьыт</item>
+        <item>Усьтэм укное кеськы: Мон - удмурт! Мон туж шудо!</item>
+        <item>Паллян палад пукись эшед сярысь малпанъёстэ вера</item>
+        <item>Кӧня тыныд арес, сомында пол ик астэ кымысад тэшкыльты</item>
+        <item>Вера, пичи дыръяд кин луэмед потэ вал</item>
+        <item>Та писпуослэсь удмурт нимъёссэс вера: берёза, тополь, сосна, ель, клён</item>
+        <item>Толэзьёслэсь удмурт нимъёссэс вера</item>
+        <item>Мурӝол Андеграунд кадь тэтчаса "Мы супер удмурты" кырӟанысьтыз припевзэ быдэсты</item>
+        <item>Удмурт кылбур вера. Ӧд ке быгаты, бур но паллян палад пукись эшъёсыд пельёстэ мед позыръялозы</item>
+        <item>Ым тырад сиён куртчы но шу: "Малы мон сыӵе кӧй?" </item>
+        <item>Николай Анисимовлэсь "Ӟеч луэ, тӧдьы кызьпуос" кырӟанзэ рокез сямен кырӟа</item>
+        <item>Вера, вордскем нуналад кыӵе тужгес но кулэтэм арбери тыныд кузьмазы</item>
+        <item>Удмурт кылын куинь анекдот мадь</item>
+        <item>Астэ удмурт ТВ-тӥ программаез нуись интые пукты но вакчияк туннэ нуналысьтыд иворъёсын тодматы</item>
+        <item>Удмурт нылкышно костюме пырись дӥсьёслэсь нимъёссэс вера</item>
+        <item>Паллян палан пукись эшед пала берытскы но шу: "Кыӵе тон мусо! Инь-инь-инь!"</item>
+        <item>10 удмурт сиён-юонъёслэсь нимъёссэс вера</item>
+        <item>Ӟуч кылэ берыкты: кун, куншет, кунпус, кунул</item>
     </string-array>
+
+    <string-array name="new_year_tasks">
+        <item>Ворсам синъёсын перепеч сиись Лымыпогез суреда</item>
+        <item>Вуись арлэсь пӧйшурзэ удмурт дэремен суреда</item>
+        <item>Выль арлы сӥзем кылбурез лыдӟы</item>
+        <item>Ымад вить виноград донгы но выль ар кырӟанэз быдэсты</item>
+        <item>Пукон вылэ султы но «Лудкечпи гебыр-гебыр» кылбурез пичи пинал кадь вера</item>
+        <item>Балконэ пот но вить пол черекты: «Выль Арен, эшъёс!»</item>
+        <item>Бур палан пукись эштэ ӟыгырты но выль арен ӟечкыла</item>
+        <item>Коркатӥ лымы пельтэмтӥ коласа кадь ветлы</item>
+        <item>Кык адямиез юрттӥсе кут, кыз котыртӥ бергаса, лымыпырыослэсь эктэмзэс возьматэ</item>
+        <item>Возьматы, кызьы Тол Бабай мунчо пыре</item>
+        <item>Вера, ку но кызьы Тол Бабайлы оскемысь дугдӥд</item>
+        <item>Вань шудӥсьёсты кыз доры султыты но выль ар туспуктэм лэсьты</item>
+        <item>Лымыныллы 5 комплимент вера</item>
+        <item>Гурезь йылысь нискылтэмдэ пантомимаен возьматы</item>
+        <item>Эшедлы жингырты но шу: \"Выль ар вуиз, тодӥськод-а? А мон тонэ уг ӟечкыла!\"</item>
+        <item>Пантомимаен салютэз возьматы</item>
+        <item>\"Шулдыр ӝыт\" ансамбльлэсь \"Выль арен, эшъёсы\" кырӟанзэ кык мукет шудӥсен кырӟа</item>
+    </string-array>
+    <string name="title_activity_about">Ми сярысь</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="about">Ми сярысь</string>
+    <string name="idea">Та шудонэз малпаз но юанъёс дасяз:</string>
+    <string name="idea_fio">Лукерья Шихова</string>
+    <string name="develop">Лэсьтӥсь:</string>
+    <string name="developer">Григорий Григорьев</string>
+    <string name="design">Суред лэсьтӥз:</string>
+    <string name="designer">Вера Штыкова</string>
+    <string name="send_report">Малпандэс кельтоно</string>
 
 </resources>
